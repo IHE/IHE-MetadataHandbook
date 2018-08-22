@@ -200,7 +200,7 @@ This handbook is intended to be used in various situations.
     use case analysis and decisions – this focuses on how the
     environment or user base has changed.
     
-    2.  ### How to use this Handbook
+### How to use this Handbook
 
 This handbook is designed to guide you to an understanding of your
 intended use cases and technology limitations of metadata within various
@@ -646,7 +646,7 @@ steps will be explained:
 
 10. Plan to revise your Community Metadata Specification in the future
     
-    4.  ## Identify shared business needs
+## Identify shared business needs
 
 Collaborating parties and stakeholders in a Community must agree on the
 need for a shared definition and implementation of a metadata set. Here
@@ -683,7 +683,7 @@ are the steps to organize this:
     identify requirements that must be met, and best practices that
     others have available for use.
     
-    5.  ## Gather relevant Use cases
+## Gather relevant Use cases
 
 Make an inventory of the current and planned use cases in the Community
 and look at use cases in other Communities. Look at what types of
@@ -1009,7 +1009,7 @@ using:
   - > creationTime, service
         timeframe
     
-    10. ## Use the guidance in the Handbook to assemble the metadata set 
+## Use the guidance in the Handbook to assemble the metadata set 
 
 Section 5 of this document provides principles, guidelines and other
 considerations for the refinement of a few critical metadata. In the
@@ -1062,7 +1062,7 @@ definition process, keep the following action points in mind:
     recognizing that historic entries are not going to conform to the
     new Community Metadata Specification rules.
     
-    11. ## Community Metadata Specification
+## Community Metadata Specification
 
 Your Community Metadata Specification is the documentation produced by
 using this handbook. It includes value sets, policies, and Metadata use
