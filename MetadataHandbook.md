@@ -657,8 +657,8 @@ steps will be explained:
 
 10. Plan to revise your Community Metadata Specification in the future
 
-    4.  Identify shared business needs
-        ------------------------------
+    Identify shared business needs
+    ------------------------------
 
 Collaborating parties and stakeholders in a Community must agree on the
 need for a shared definition and implementation of a metadata set. Here
@@ -695,8 +695,8 @@ are the steps to organize this:
     identify requirements that must be met, and best practices that
     others have available for use.
 
-    5.  Gather relevant Use cases
-        -------------------------
+    Gather relevant Use cases
+    -------------------------
 
 Make an inventory of the current and planned use cases in the Community
 and look at use cases in other Communities. Look at what types of
@@ -844,8 +844,7 @@ cases:
     "less critical" (e.g., used in less common processing of the
     returned query response, or by human review of the metadata).
 
-![C:\\Users\\Mary\\AppData\\Local\\Temp\\SNAGHTML9cb4c2a.PNG](media/image3.png){width="6.072916666666667in"
-height="4.114583333333333in"}
+![C:\\Users\\Mary\\AppData\\Local\\Temp\\SNAGHTML9cb4c2a.PNG](MetadataPurpose.png)
 
 Note: The above figure is from IHE ITI Technical Framework Volume 3.
 
@@ -857,7 +856,7 @@ following snippet from "Table 4.1.3.2-1" is from tables found in the
 The reader needs to be very familiar with the definitions of the
 metadata found in ITI Technical Framework Volume 3.
 
-![](media/image4.png){width="6.28125in" height="4.635416666666667in"}
+![](DocumentEntryDefinitions.png)
 
 The XDS metadata attributes cover a number of domains that focus on a
 number of axes: patient identity, privacy and security, provenance
