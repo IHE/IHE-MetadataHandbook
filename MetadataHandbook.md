@@ -1,7 +1,6 @@
 **Integrating the Healthcare Enterprise**
 
-![IHE\_LOGO\_for\_tf-docs](IHE.jpg){width="1.7972222222222223in"
-height="0.91875in"}
+![IHE\_LOGO\_for\_tf-docs](IHE.jpg)
 
 **IHE IT Infrastructure (ITI)**
 
