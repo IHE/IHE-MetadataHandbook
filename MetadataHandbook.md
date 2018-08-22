@@ -381,7 +381,7 @@ considered:
     Disambiguation between semi-overlapping values should be explained
     and linked to a decision tree.
 
-![](media/image2.png){width="5.659091207349081in"
+![](DocSharingMetadata.png){width="5.659091207349081in"
 height="3.1832392825896765in"}
 
 Figure 2-1: Document Sharing Lifecycle
