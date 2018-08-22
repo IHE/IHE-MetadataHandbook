@@ -844,7 +844,7 @@ cases:
     "less critical" (e.g., used in less common processing of the
     returned query response, or by human review of the metadata).
 
-![C:\\Users\\Mary\\AppData\\Local\\Temp\\SNAGHTML9cb4c2a.PNG](MetadataPurpose.png)
+![C:\\Users\\Mary\\AppData\\Local\\Temp\\SNAGHTML9cb4c2a.PNG](metadataPurpose.png)
 
 Note: The above figure is from IHE ITI Technical Framework Volume 3.
 
