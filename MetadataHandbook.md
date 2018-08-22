@@ -1,6 +1,6 @@
 **Integrating the Healthcare Enterprise**
 
-![IHE\_LOGO\_for\_tf-docs](media/image1.jpeg){width="1.7972222222222223in"
+![IHE\_LOGO\_for\_tf-docs](ihe.jpg){width="1.7972222222222223in"
 height="0.91875in"}
 
 **IHE IT Infrastructure (ITI)**
@@ -381,8 +381,7 @@ considered:
     Disambiguation between semi-overlapping values should be explained
     and linked to a decision tree.
 
-![](DocSharingMetadata.png){width="5.659091207349081in"
-height="3.1832392825896765in"}
+![](DocSharingMetadata.png)
 
 Figure 2-1: Document Sharing Lifecycle
 
