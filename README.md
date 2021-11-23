@@ -1,5 +1,4 @@
 **TODO**
-- Clean-up / check internal links
 - Review content for updates
 
 **DONE** (formatting)
@@ -8,6 +7,7 @@
 - clean up bulleted and numbered lists
 - TOC
 - update links to HTML rendered version of ITI framework when possible
+- Clean-up / check internal links
 
 **********************************************************************************************************
 
