@@ -1,6 +1,6 @@
 **TODO**
 - Clean-up / check internal links
-- - Review content for updates
+- Review content for updates
 
 **DONE** (formatting)
 - eliminate unnecessary LF
