@@ -1,5 +1,6 @@
 **TODO**
 - Review content for updates
+- add in heading numbers (e.g. 1.1 Purpose of this Handbook)
 
 **DONE** (formatting)
 - eliminate unnecessary LF
