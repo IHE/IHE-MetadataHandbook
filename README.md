@@ -212,7 +212,7 @@ Within an existing Community there will be patterns of use. These historic patte
 For each type of document currently published, identify the various metadata codes that are used. Capture the current way that XDS queries are done. Note that historic and current use of metadata might have deviated from your current Community Metadata Specification. This is an indication that there is an unmet need, or a misunderstanding of your existing Community Metadata Specification. These deviations should be investigated carefully to guide the updated Community Metadata Specification.
 ## Various uses for metadata
 In this section we will guide you on some best practices, to help guide you at making your new decisions on how metadata will be used in your Community. Consider the various uses for metadata in the relevant use cases:
-* Define the use of the metadata for the most relevant “critical few” used in queries – as discussed previously in [XDS/XCA Optimal Query](#xds-xca-optimal-query);
+* Define the use of the metadata for the most relevant “critical few” used in queries – as discussed previously in [XDS/XCA Optimal Query](#xdsxca-optimal-query);
 * Define the use of the metadata for the additional metadata that are used in local filtering – as discussed in [Local refinement of Query results](#local-refinement-of-query-results);
 * Define the use of the metadata for the remaining attributes that are “less critical” (e.g., used in less common processing of the returned query response, or by human review of the metadata).
 
