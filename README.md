@@ -1,6 +1,3 @@
-**TODO**
-- Review content for updates
-
 **DONE** (formatting)
 - eliminate unnecessary LF
 - convert tables to markdown
@@ -9,6 +6,7 @@
 - update links to HTML rendered version of ITI framework when possible
 - clean-up / check internal links
 - add in heading numbers (e.g. 1.1 Purpose of this Handbook)
+- Review content for updates
 
 **********************************************************************************************************
 **Integrating the Healthcare Enterprise**
@@ -429,7 +427,7 @@ Allows to search for a document of interest produced by a certain type of health
 * Should be a small well controlled value set to enable searching.
 * Need rules for DocumentEntry, and SubmissionSet. They might be different.
 ### 4.2.6 authorSpeciality
-Useful in a secondary filtering (see [Various uses for metadata](#various-uses-for-metadata)), when looking for documents produced by a few very specific specialties. Critical for
+Useful in a secondary filtering (see [Various uses for metadata](#34-various-uses-for-metadata)), when looking for documents produced by a few very specific specialties. Critical for
 secondary filtering for a document of interest produced by a certain
 type of specialty or sub-specialty.
 * Fine-grained level of granularity;
