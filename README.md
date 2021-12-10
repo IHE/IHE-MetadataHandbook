@@ -44,7 +44,7 @@ The current version of the IHE IT Infrastructure Technical Framework can be foun
 * [Metadata principles and guidelines](#4-metadata-principles-and-guidelines)
 * [Glossary](#glossary)
 # 1 Introduction
-The Document Sharing profiles from IHE including XDS and XCA, enable a Community to share Patient specific medical documents. This is described in the [Enabling Document Sharing through IHE Profiles white paper (HIE using IHE)](https://profiles.ihe.net/ITI/HIE-Whitepaper/index.html). Each document shared is described by metadata. A Community deploying an HIE this way needs to define some metadata constraints and practices, so that the documents are found when they are needed. This handbook helps a Community to come up with appropriate constraints.
+The Document Sharing profiles from IHE including [XDS](https://profiles.ihe.net/ITI/TF/Volume1/ch-10.html) and [XCA](https://profiles.ihe.net/ITI/TF/Volume1/ch-18.html), enable a Community to share Patient specific medical documents. This is described in the [Enabling Document Sharing through IHE Profiles white paper (HIE using IHE)](https://profiles.ihe.net/ITI/HIE-Whitepaper/index.html). Each document shared is described by metadata. A Community deploying an HIE (Health Information Exchange) this way needs to define some metadata constraints and practices, so that the documents are found when they are needed. This handbook helps a Community to come up with appropriate constraints.
 ## 1.1 Purpose of this Handbook
 This handbook is intended to assist the reader on the steps necessary to define how document metadata would be used, how to enforce and propagate that use, and how to evolve the document metadata use constraints over time. Use of this handbook will produce a set of documentation and plans that we call your “Community Metadata Specification”. A well-managed Community Metadata Specification is an essential component of an efficient and coordinated Document Sharing system. This becomes more important with increase in participation, the number of patients, document types, and shared documents.
 
@@ -247,7 +247,7 @@ Filtering, grouping and sorting the available documents greatly enhance the disc
 Each Community will determine the desired level of constraints. Some Communities may only define a specific value set for classCode and leave all other metadata with the default constraints from XCA or XDS; other Communities will need to define constraints for every metadata attribute across all object types.
 
 * Where there are rules already in place in a Community, determine how well these are working and what the gaps are.
-* Where multiple Communities are federated with XCA the differences between the metadata sets of these Communities will need to be harmonized, or mapped. Much of the time the harmonization and mapping are  incomplete thus the consuming human may need to be able to work with poor search results.
+* Where multiple Communities are federated with XCA, the differences between the metadata sets of these Communities will need to be harmonized, or mapped. Much of the time the harmonization and mapping are  incomplete thus the consuming human may need to be able to work with poor search results.
 * The technology used within the Community may have technical constraints. For example, a publishing system that has fixed codes that can’t be changed. These technical constraints are unfortunate but are a reality. It is better to understand them, and work around them.
 * IHE has predefined the use of metadata attributes and value sets for some document types:
 
@@ -405,7 +405,7 @@ Critical for searching for a document of interest; The classCode should be optim
 * Value set managed at Community level should be closed, only values from the value set are used for publication;
 * Non-overlapping concepts to enable most effective searching success;
 * Clear definition and guidance for proper creation and lookup of documents;
-* Related to typeCode. See typeCode.
+* Related to typeCode. See [typeCode](#422-typecode).
 ### 4.2.2 typeCode
 The typeCode should be specific to the type of document published. The value set for typeCode will then contain potentially overlapping codes to be most expressive of the exact type of document published. Different clinical perspectives at the document source may result in preferring to use of one of these different overlapping codes.
 * Should not be used for searching unless looking for a very exact type of document. The classCode combined with practiceSettingCode should be used for searching;
