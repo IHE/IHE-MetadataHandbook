@@ -271,9 +271,9 @@ Each Community will determine the desired level of constraints. Some Communities
 
 Notes:
 
-1. XDW workflow definitions can be found [here](http://wiki.ihe.net/index.php/Category:XDW) and [here](http://wiki.ihe.net/index.php/Cross-enterprise_Tumor_Board_Workflow_Definition)
-2. Certain images can be found [here](http://wiki.ihe.net/index.php/Category:DICOM>)
-3. All IHE profiles of CDA can be found [here](http://wiki.ihe.net/index.php/Category:CDA>)
+1. XDW workflow definitions can be found [here](https://wiki.ihe.net/index.php/Category:XDW)
+2. Certain images can be found [here](https://wiki.ihe.net/index.php/Category:DICOM>)
+3. All IHE profiles of CDA can be found [here](https://wiki.ihe.net/index.php/Category:CDA>)
 ## 3.6 Assemble the metadata attributes
 In setting up your Community Metadata Specification, it is advised to
 start with the ‘easy’, non-ambiguous metadata attributes. These
@@ -325,7 +325,7 @@ For deploying value sets, we offer the following specific suggestions:
 * Value sets should be published in electronically consumable form (examples can be found on the [IHE wiki](https://wiki.ihe.net/index.php/Metadata_Handbook),  for example in
 	* using a spreadsheet published on a general purpose file sharing system or through use of the IHE [Non-Patient File Sharing](https://wiki.ihe.net/index.php/Non-patient_File_Sharing_\(NPFSm\))    (NPFSm) Profile;
 	* using IHE [Sharing Value Sets](https://wiki.ihe.net/index.php/Sharing_Value_Sets) (SVS) Profile;
-	* using tools like [ART-DECOR](http://art-decor.org/art-decor/home);
+	* using tools like [ART-DECOR](https://art-decor.org/mediawiki/index.php/Main_Page);
 	* using [FHIR ValueSet](https://www.hl7.org/fhir/valueset.html) resource.
 * It is recommended to publish the value set including clear definition of each code, and guidance on the proper use to avoid ambiguity of choice. This might be done with a document expressing a decision tree or other, or with more sophisticated (integrated) tools;
 * Registry actors will have a mechanism to update value sets and ensure that newly published documents conform to the latest deployed Community Metadata Specification;
@@ -340,7 +340,7 @@ There are some strategies to choose from:
 	* A GUI that implements an XCA Initiating Gateway could present only new values to the user, and convert a request for new value X, to a query for X OR old value Y.
 	* A server that implements an XDS Registry could respond to a query for X with matches on X OR Y.
 * Communicate with all stakeholders, so they can adjust their querying and processing accordingly. If necessary, inform end users of the changes and additions to the metadata set and the user interface.
-* Document Consumers will need to be robust with their ability to process historical documents <sup>4</sup>.
+* Document Consumers will need to be robust with their ability to process historical documents <sup>3</sup>.
 
 Note that these strategies rely on the Community Metadata Specification containing accurate and current information on the state of metadata usage.
 ## 3.10 Maintenance and Governance 
@@ -360,7 +360,7 @@ This handbook will guide you on how to evaluate the critical few metadata attrib
 This section outlines some principles of good metadata use. Following these principles is not required but is highly recommended.
 ## 4.1 General Principles for Codes
 Use of coded and structured metadata values will result in better discovery and better preservation of the meaning of those metadata values. This principle discourages use of free text, or minimally filled out structured values (e.g., author attribute) as a means to perform an initial query. Use of textual content in metadata values is effective in a second step filtering (e.g., when a human is involved in browsing and selecting relevant document entries based on reading free text). The following metadata attributes use codes: This informative table is derived from formal normative ITI Technical Framework Volume 3:
-[Table 4.2.3.2-1](https://profiles.ihe.net/ITI/TF/Volume3/ch-4.2.html#4.2.3), [Table 4.2.3.3-1](https://profiles.ihe.net/ITI/TF/Volume3/ch-4.2.html#4.2.3), and [Table 4.2.3.4-1](https://profiles.ihe.net/ITI/TF/Volume3/ch-4.2.html#4.2.3).
+[Table 4.2.3.2-1](https://profiles.ihe.net/ITI/TF/Volume3/ch-4.2.html#t4.2.3.2-1), [Table 4.2.3.3-1](https://profiles.ihe.net/ITI/TF/Volume3/ch-4.2.html#t4.2.3.3-1), and [Table 4.2.3.4-1](https://profiles.ihe.net/ITI/TF/Volume3/ch-4.2.html#t4.2.3.4-1).
 
 #### Table: Codable Metadata Attributes
 
@@ -431,7 +431,7 @@ Useful in a secondary filtering (see [Various uses for metadata](#34-various-use
 secondary filtering for a document of interest produced by a certain
 type of specialty or sub-specialty.
 * Fine-grained level of granularity;
-*Should not be used for searching unless looking for a very exact specialty. The practiceSettingCode should be used for searching specialty for primary filtering;
+* Should not be used for searching unless looking for a very exact specialty. The practiceSettingCode should be used for searching specialty for primary filtering;
 * Would be inclusive of all specialties and sub-specialties known to be published within the Community;
 * Value set managed at Community level should be extensible to enable exceptional use cases.
 # Glossary
