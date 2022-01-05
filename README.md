@@ -1,14 +1,4 @@
-**DONE** (formatting)
-- eliminate unnecessary LF
-- convert tables to markdown
-- clean up bulleted and numbered lists
-- TOC
-- update links to HTML rendered version of ITI framework when possible
-- clean-up / check internal links
-- add in heading numbers (e.g. 1.1 Purpose of this Handbook)
-- Review content for updates
 
-**********************************************************************************************************
 **Integrating the Healthcare Enterprise**
 
 **[IHE IT Infrastructure](https://profiles.ihe.net/ITI)** **Handbook**
