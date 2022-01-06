@@ -41,11 +41,11 @@ This handbook uses the term “Community” as defined in the [Enabling Document
 This handbook constrains document metadata to enable optimal discoverability of the shared documents within your Community. There are other responsibilities of Community management: patient identity and demographics management, organizational identification and credentialing, privacy policy, security policy, partner certification processes, etc. IHE addresses these broader topics in other publications listed in [Background References](#background-references), including the whitepaper ["Template for XDS Affinity Domain Deployment Planning”](http://www.ihe.net/Technical_Framework/upload/IHE_ITI_White_Paper_XDS_Affinity_Domain_Template_TI_2008-12-02.pdf).
 ### 1.1.1 When to use this Handbook
 This handbook is intended to be used in various situations.
-* When initially deploying a Community – In this case there are no existing documents published, so the opportunity is to define the expected use of the metadata.
+* When initially deploying a Community – In this case there are no existing documents published, so the opportunity is to define the expected use of the metadata
 * When adding a new document use case to a Community – Any new use cases may drive changes to the Metadata use
 * When connecting new partners to a Community
 * When connecting multiple Communities together – This will focus on harmonizing the various Community Metadata Specification
-* On a regular basis (roughly between 2-5 years), to re-examine past use case analysis and decisions – this focuses on how the environment or user base has changed.
+* On a regular basis (roughly between 2-5 years), to re-examine past use case analysis and decisions – this focuses on how the environment or user base has changed
 ### 1.1.2 How to use this Handbook
 This handbook is designed to guide you to an understanding of your intended use cases and technology limitations of metadata within various scales of Document Sharing Communities. The handbook recommends that a team of stakeholders in your Community follow a process that considers your needs, makes decisions, documents them, and creates a plan for deploying those decisions. This handbook is intended to scale from a single purpose XDS Affinity Domain such as a research project, to a regional Health Information Exchange using XDS, or to a set of federated Communities using XCA.
 ## 1.2 Intended Audience
@@ -69,9 +69,9 @@ The following references are considered critical foundational text that should b
 * [European metadata    project](https://ihe-europe.net/sites/default/files/2017-11/IHE_ITI_XDS_Metadata_Guidelines_v1.0.pdf) - initiative to collect and analyze XDS metadata initiatives in 10 European countries and general introduction to categorization topics, 2017,
 * Example of a [classCode value set](http://wiki.ihe.net/index.php/XDS_classCode_Metadata_Coding_System)
 ### 1.3.1 Samples and ongoing Discussion
-IHE has gathered metadata value sets from various projects. IHE has started a discussion forum to encourage sharing by the community of individuals working on Metadata use and constraints. These and other examples can be found on the [IHE wiki](https://wiki.ihe.net/index.php/Metadata_Handbook) A discussion forum has also been setup in [Google groups](https://groups.google.com/forum/%23!forum/ihe-metadata).
+IHE has gathered metadata value sets from various projects. IHE has started a discussion forum to encourage sharing by the community of individuals working on Metadata use and constraints. These and other examples can be found on the [IHE Wiki](https://wiki.ihe.net/index.php/Metadata_Handbook) An [XDS Implementors discussion forum](https://groups.google.com/g/ihe-xds-implementorshas) has also been set up.
 ## 1.4 Comment Process
-IHE International welcomes comments on this document and the IHE initiative. They can be submitted by sending an email to the co-chairs and secretary of the ITI domain committees at ITI@ihe.net. A Community forum of peers also using this handbook is available at <ihe-metadata@googlegroups.com>
+IHE International welcomes comments on this document and the IHE initiative. They can be submitted by sending an email to the co-chairs and secretary of the ITI domain committees at ITI@ihe.net.
 ## 1.5 Open and Closed Issues
 
 ### Open issues:
