@@ -69,7 +69,7 @@ The following references are considered critical foundational text that should b
 * [European metadata    project](https://ihe-europe.net/sites/default/files/2017-11/IHE_ITI_XDS_Metadata_Guidelines_v1.0.pdf) - initiative to collect and analyze XDS metadata initiatives in 10 European countries and general introduction to categorization topics, 2017,
 * Example of a [classCode value set](http://wiki.ihe.net/index.php/XDS_classCode_Metadata_Coding_System)
 ### 1.3.1 Samples and ongoing Discussion
-IHE has gathered metadata value sets from various projects. IHE has started a discussion forum to encourage sharing by the community of individuals working on Metadata use and constraints. These and other examples can be found on the [IHE Wiki](https://wiki.ihe.net/index.php/Metadata_Handbook) An [XDS Implementors discussion forum](https://groups.google.com/g/ihe-xds-implementorshas) has also been set up.
+IHE has gathered metadata value sets from various projects. IHE has started a discussion forum to encourage sharing by the community of individuals working on Metadata use and constraints. These and other examples can be found on the [IHE Wiki](https://wiki.ihe.net/index.php/Metadata_Handbook) An [XDS Implementors discussion forum](https://groups.google.com/g/ihe-xds-implementors) has also been set up.
 ## 1.4 Comment Process
 IHE International welcomes comments on this document and the IHE initiative. They can be submitted by sending an email to the co-chairs and secretary of the ITI domain committees at ITI@ihe.net.
 ## 1.5 Open and Closed Issues
