@@ -21,7 +21,7 @@ General information about IHE can be found at [IHE](http://www.ihe.net/).
 
 Information about the IHE IT Infrastructure domain can be found at [IHE Domains](http://ihe.net/IHE_Domains/).
 
-Information about the organization of IHE Technical Frameworks and Supplements and the process used to create them can be found at [Profiles] (https://www.ihe.net/resources/profiles/) and [IHE Process](http://ihe.net/IHE_Process/).
+Information about the organization of IHE Technical Frameworks and Supplements and the process used to create them can be found at [Profiles](https://www.ihe.net/resources/profiles/) and [IHE Process](http://ihe.net/IHE_Process/).
 
 The current version of the IHE IT Infrastructure Technical Framework can be found [online](https://profiles.ihe.net/ITI/TF/index.html).
 
