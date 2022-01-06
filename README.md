@@ -5,7 +5,7 @@
 
 **Document Sharing Metadata**
 
-**Revision 1.2 - Public-Comment - conversion to html**
+**Revision 2.0 - Public-Comment - conversion to html**
 
 Date: January 6, 2022
 
@@ -15,13 +15,13 @@ Email: ititech@ihe.net
 # Foreword
 This is a handbook of the IHE IT Infrastructure Domain.
 
-This handbook is published on August 20, 2018. Comments are invited and can be submitted to [IHE ITI](http://ihe.net/ITI_Public_Comments/).
+This handbook is published on January 6, 2022 for public comment. Comments are invited and can be submitted [ITI Public Comments](http://ihe.net/ITI_Public_Comments/). In order to be considered in development of the subsequent version of the white paper, comments must be received by February 6, 2022.
 
-General information about IHE can be found at [www.ihe.net](http://www.ihe.net/).
+General information about IHE can be found at [IHE](http://www.ihe.net/).
 
-Information about the IHE IT Infrastructure domain can be found at [ihe.net/IHE\_Domains](http://ihe.net/IHE_Domains/).
+Information about the IHE IT Infrastructure domain can be found at [IHE Domains](http://ihe.net/IHE_Domains/).
 
-Information about the organization of IHE Technical Frameworks and Supplements and the process used to create them can be found at [http://ihe.net/IHE\_Process](http://ihe.net/IHE_Process/) and [http://ihe.net/Profiles](http://ihe.net/Profiles/).
+Information about the organization of IHE Technical Frameworks and Supplements and the process used to create them can be found at [Profiles] (https://www.ihe.net/resources/profiles/) and [IHE Process](http://ihe.net/IHE_Process/).
 
 The current version of the IHE IT Infrastructure Technical Framework can be found [online](https://profiles.ihe.net/ITI/TF/index.html).
 
