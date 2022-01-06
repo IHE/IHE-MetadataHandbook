@@ -15,7 +15,7 @@ Email: ititech@ihe.net
 # Foreword
 This is a handbook of the IHE IT Infrastructure Domain.
 
-This handbook is published on January 6, 2022 for public comment. Comments are invited and can be submitted [ITI Public Comments](http://ihe.net/ITI_Public_Comments/). In order to be considered in development of the subsequent version of the white paper, comments must be received by February 6, 2022.
+This handbook is published on January 6, 2022 for public comment. Comments are invited and can be submitted [ITI Public Comments](http://ihe.net/ITI_Public_Comments/). In order to be considered in development of the subsequent version of the handbook, comments must be received by February 6, 2022.
 
 General information about IHE can be found at [IHE](http://www.ihe.net/).
 
