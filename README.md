@@ -434,6 +434,6 @@ type of specialty or sub-specialty.
 | False-positive                   | The undesirable results of a query where the query returns extra results (positive) that are not desired. This is usually due to missing metadata attributes being populated, thus the Query must return these results because it cannot eliminate them. |
 | False-negative                   | The undesirable results of a query where the query results fail to return results (negative) that should have been returned. This is usually due to overly aggressive query parameters, or incorrect metadata attributes.                                |
 
-1. CDA is the registered trademark of Health Level Seven International.
-2. FHIR is the registered trademark of Health Level Seven International.
+1. CDA is the registered trademark of Health Level Seven International and the use does not constitute endorsement by HL7.
+2. FHIR is the registered trademark of Health Level Seven International and the use does not constitute endorsement by HL7.
 3. Postel’s law on robustness: “be conservative in what you do, be liberal in what you accept from others” [RFC 761](https://www.rfc-editor.org/rfc/rfc761)
