@@ -90,7 +90,7 @@ The overall use case for Document Sharing makes metadata critical to data discov
 * A guideline and ‘decision tree’ are very useful to ensure the correct use of the metadata for entry and retrieval of documents. Disambiguation between semi-overlapping values should be explained and linked to a decision tree.
 ![](./media/image2.png)
 
-**Figure Document Sharing Lifecycle**
+**Figure 2-1: Document Sharing Lifecycle**
 
 The XDS/XCA Query transaction has several query capabilities. The FindDocuments query is one of the most powerful.
 The other  queries are not useless but are for more special purposes. Some are more focused on SubmissionSets, Folders, and Associations. These may be useful for specific use cases, but not for a general-purpose Document Consumer.
@@ -239,7 +239,7 @@ Each Community will determine the desired level of constraints. Some Communities
 * The technology used within the Community may have technical constraints. For example, a publishing system that has fixed codes that can’t be changed. These technical constraints are unfortunate but are a reality. It is better to understand them, and work around them.
 * IHE has predefined the use of metadata attributes and value sets for some document types:
 
-#### Table: Sample of IHE Document Content Profiles – with metadata constraints
+#### Table 3.5-1: Sample of IHE Document Content Profiles – with metadata constraints
 
 | IHE Domain | Profile Acronym | IHE Profile Links                                                                                                                      |
 | ---------- | --------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
@@ -352,7 +352,7 @@ This section outlines some principles of good metadata use. Following these prin
 Use of coded and structured metadata values will result in better discovery and better preservation of the meaning of those metadata values. This principle discourages use of free text, or minimally filled out structured values (e.g., author attribute) as a means to perform an initial query. Use of textual content in metadata values is effective in a second step filtering (e.g., when a human is involved in browsing and selecting relevant document entries based on reading free text). The following metadata attributes use codes: This informative table is derived from formal normative ITI Technical Framework Volume 3:
 [Table 4.2.3.2-1](https://profiles.ihe.net/ITI/TF/Volume3/ch-4.2.html#t4.2.3.2-1), [Table 4.2.3.3-1](https://profiles.ihe.net/ITI/TF/Volume3/ch-4.2.html#t4.2.3.3-1), and [Table 4.2.3.4-1](https://profiles.ihe.net/ITI/TF/Volume3/ch-4.2.html#t4.2.3.4-1).
 
-#### Table: Codable Metadata Attributes
+#### Table 4.1-1: Codable Metadata Attributes
 
 | Object Type   | Metadata Attributes            | Description|
 |---------------|--------------------------------|------------------------|
@@ -433,6 +433,8 @@ type of specialty or sub-specialty.
 | Participant                      | Usually an organization within an Affinity Domain or Community.                                                                                                                                                                                          |
 | False-positive                   | The undesirable results of a query where the query returns extra results (positive) that are not desired. This is usually due to missing metadata attributes being populated, thus the Query must return these results because it cannot eliminate them. |
 | False-negative                   | The undesirable results of a query where the query results fail to return results (negative) that should have been returned. This is usually due to overly aggressive query parameters, or incorrect metadata attributes.                                |
+
+The complete IHE Glossary is available at [IHE Technical Frameworks General Introduction Appendix D: Glossary](https://profiles.ihe.net/GeneralIntro/ch-D.html).
 
 1. CDA is the registered trademark of Health Level Seven International and the use does not constitute endorsement by HL7.
 2. FHIR is the registered trademark of Health Level Seven International and the use does not constitute endorsement by HL7.
