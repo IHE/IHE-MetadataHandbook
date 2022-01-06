@@ -5,9 +5,9 @@
 
 **Document Sharing Metadata**
 
-**Revision 1.1 - Published**
+**Revision 1.2 - Public-Comment - conversion to html**
 
-Date: August 20, 2018
+Date: January 6, 2022
 
 Author: ITI Technical Committee
 

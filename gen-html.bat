@@ -1,0 +1,2 @@
+pandoc -r gfm --template=https://github.com/IHE/publications/raw/master/ihe_template.html --metadata title="Document Sharing Metadata Handbook" --metadata path-prefix="../../" -w html -o index.html README.md
+REM pandoc -r gfm --standalone --metadata title="HIE-Whitepaper" -w html --css=style.css -o index.html README.md
