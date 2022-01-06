@@ -262,8 +262,8 @@ Each Community will determine the desired level of constraints. Some Communities
 Notes:
 
 1. XDW workflow definitions can be found [here](https://wiki.ihe.net/index.php/Category:XDW)
-2. Certain images can be found [here](https://wiki.ihe.net/index.php/Category:DICOM>)
-3. All IHE profiles of CDA can be found [here](https://wiki.ihe.net/index.php/Category:CDA>)
+2. Certain images can be found [here](https://wiki.ihe.net/index.php/Category:DICOM)
+3. All IHE profiles of CDA can be found [here](https://wiki.ihe.net/index.php/Category:CDA)
 ## 3.6 Assemble the metadata attributes
 In setting up your Community Metadata Specification, it is advised to
 start with the ‘easy’, non-ambiguous metadata attributes. These
