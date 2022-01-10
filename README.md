@@ -7,15 +7,16 @@
 
 **Revision 2.0 - Public-Comment - conversion to html**
 
-Date: January 6, 2022
+Date: January 12, 2022
 
 Author: ITI Technical Committee
 
 Email: ititech@ihe.net
+
 # Foreword
 This is a handbook of the IHE IT Infrastructure Domain.
 
-This handbook is published on January 6, 2022 for public comment. Comments are invited and can be submitted [ITI Public Comments](http://ihe.net/ITI_Public_Comments/). In order to be considered in development of the subsequent version of the handbook, comments must be received by February 6, 2022.
+This handbook is published on January 12, 2022 for public comment. Comments are invited and can be submitted [ITI Public Comments](http://ihe.net/ITI_Public_Comments/), or [on the IHE GitHub Metadata Handbook Issue tracker](https://github.com/IHE/IHE-MetadataHandbook/issues/new?assignees=&labels=&template=public-comment-issue-template.md&title=). In order to be considered in development of the subsequent version of the handbook, comments must be received by February 12, 2022.
 
 General information about IHE can be found at [IHE](http://www.ihe.net/).
 
