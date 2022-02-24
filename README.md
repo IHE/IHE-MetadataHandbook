@@ -34,20 +34,20 @@ The current version of the IHE IT Infrastructure Technical Framework can be foun
 * [Glossary](#glossary)
 # 1 Introduction
 The Document Sharing profiles from IHE including [XDS](https://profiles.ihe.net/ITI/TF/Volume1/ch-10.html) and [XCA](https://profiles.ihe.net/ITI/TF/Volume1/ch-18.html), enable a Community to share Patient specific medical documents. This is described in the [Enabling Document Sharing through IHE Profiles White Paper (HIE using IHE)](https://profiles.ihe.net/ITI/HIE-Whitepaper/index.html). Each document shared is described by metadata. A Community deploying an HIE (Health Information Exchange) this way needs to define some metadata constraints and practices, so that the documents are found when they are needed. This handbook helps a Community to come up with appropriate constraints.
-## 1.1 Purpose of this Handbook
+## 1.1 Purpose of This Handbook
 This handbook is intended to assist the reader on the steps necessary to define how document metadata would be used, how to enforce and propagate that use, and how to evolve the document metadata use constraints over time. Use of this handbook will produce a set of documentation and plans that we call your “Community Metadata Specification”. A well-managed Community Metadata Specification is an essential component of an efficient and coordinated Document Sharing system. This becomes more important with increase in participation, the number of patients, document types, and shared documents.
 
 This handbook uses the term “Community” as defined in the [Enabling Document Sharing through IHE Profiles White Paper (HIE using IHE)](https://profiles.ihe.net/ITI/HIE-Whitepaper/index.html). This definition is inclusive of an XDS Affinity Domain, an XCA Community, or a set of XCA Communities. This definition is also inclusive of the use of MHD (XDS-on-FHIR), although further discussion of MHD is not explicitly included in this handbook.
 
 This handbook constrains document metadata to enable optimal discoverability of the shared documents within your Community. There are other responsibilities of Community management: patient identity and demographics management, organizational identification and credentialing, privacy policy, security policy, partner certification processes, etc. IHE addresses these broader topics in other publications listed in [Background References](#13-background-references), including the white paper ["Template for XDS Affinity Domain Deployment Planning”](http://www.ihe.net/Technical_Framework/upload/IHE_ITI_White_Paper_XDS_Affinity_Domain_Template_TI_2008-12-02.pdf).
-### 1.1.1 When to use this Handbook
+### 1.1.1 When to Use This Handbook
 This handbook is intended to be used in various situations.
 * When initially deploying a Community – In this case there are no existing documents published, so the opportunity is to define the expected use of the metadata
 * When adding a new document use case to a Community – Any new use cases may drive changes to the Metadata use
 * When connecting new partners to a Community
 * When connecting multiple Communities together – This will focus on harmonizing the various Community Metadata Specification
 * On a regular basis (roughly between 2-5 years), to re-examine past use case analysis and decisions – this focuses on how the environment or user base has changed
-### 1.1.2 How to use this Handbook
+### 1.1.2 How to Use This Handbook
 This handbook is designed to guide you to an understanding of your intended use cases and technology limitations of metadata within various scales of Document Sharing Communities. The handbook recommends that a team of stakeholders in your Community follow a process that considers your needs, makes decisions, documents them, and creates a plan for deploying those decisions. This handbook is intended to scale from a single purpose XDS Affinity Domain such as a research project, to a regional Health Information Exchange using XDS, or to a set of federated Communities using XCA.
 ## 1.2 Intended Audience
 The intended audience of this handbook is:
@@ -69,21 +69,21 @@ The following references are considered critical foundational text that should b
 * All IHE defined profiles of [CDA](http://wiki.ihe.net/index.php/Category:CDA)<sup>®1</sup>,
 * [European metadata    project](https://ihe-europe.net/sites/default/files/2017-11/IHE_ITI_XDS_Metadata_Guidelines_v1.0.pdf) - initiative to collect and analyze XDS metadata initiatives in 10 European countries and general introduction to categorization topics, 2017,
 * Example of a [classCode value set](http://wiki.ihe.net/index.php/XDS_classCode_Metadata_Coding_System)
-### 1.3.1 Samples and ongoing Discussion
+### 1.3.1 Samples and Ongoing Discussion
 IHE has gathered metadata value sets from various projects. IHE has started a discussion forum to encourage sharing by the community of individuals working on Metadata use and constraints. These and other examples can be found on the [IHE Wiki](https://wiki.ihe.net/index.php/Metadata_Handbook) An [XDS Implementors discussion forum](https://groups.google.com/g/ihe-xds-implementors) has also been set up.
 ## 1.4 Comment Process
 IHE International welcomes comments on this document and the IHE initiative. They can be submitted by sending an email to the co-chairs and secretary of the ITI domain committees at ITI@ihe.net.
 ## 1.5 Open and Closed Issues
 
-### Open issues:
+### Open Issues:
 * none
-### Closed issues:
+### Closed Issues:
 * **MDH-4**: We recognize authorInstitution and sourcePatientInfo are constrained by various projects for specific uses. Such as use of authorInstitution use being consistent with the XUA SAML assertion   content, and sourcePatientInfo use being consistent with national patient ID assigned. These are useful constraints within those projects, but it is not clear to what extent they are globally defined Best Practices that his handbook could recommend.
 * **MDH-5**: typeCode is a value selected by the publisher of a document, expressing its intention for the document. The value set within a Community for typeCode will have to be comprehensive and is likely to contain overlapping codes. There can be preferred use codes within a Community and guidance to reduce overlap. But, in the end, it will be the publisher of a document that choose the best code from their perspective. This is a reality of clinical practice that the publisher must be allowed to pick the typeCode that best expresses their intentions for the document.
 * **MDH-6**: classCode is a value intended to assure discoverability success. The classCode should come from a small value set of non-overlapping codes. Ensuring non-overlaps delivers the certainty that no clinically relevant document may be missed.
 * **MDH-7**: Historic metadata is unlikely to be changeable, given the challenged in semantic mapping, so the old vocabulary is most likely to remain visible and valid. There are methods, such as Metadata Update, to revise metadata; however, these methods are discouraged as their use for this purpose becomes very expensive as the longitudinal data grows. Therefore, one must always accept that historic data may not be following current metadata expectation. This means that when looking for document within a time span that  covers different metadata definition regimes one may have to query two different ways or be more liberal in the query expectations. This also means that having to redesign/adjust a Community Metadata    Specification for metadata should be avoided, by adopting a forward-looking approach from the beginning.
 * **MDH-8**: This handbook did not include discussion or impact of IHE profiles leveraging FHIR<sup>®2</sup>. 
-# 2 Principles of good document metadata control
+# 2 Principles of Good Document Metadata Control
 The overall use case for Document Sharing makes metadata critical to data discovery. The *Document Source* must carefully use the right metadata to describe the document. The quality and accuracy of the metadata produced by the Document Source is critical to any reliable and efficient access to shared documents. The *Document Consumer* must leverage the Query model, and the resulting list of available files must answer the expectations of the end users. If a Document Source “misfiles” a record (incorrect creation of metadata), the record may not be found by the Document Consumer. To avoid these potential hazards, the following measures must be considered:
 * Any Document Consumer within the Document Sharing Community should be able to accurately interpret the correct meaning of the metadata;
 * Harmonization of metadata sets is needed when multiple Affinity Domains want to exchange documents, either through common metadata sets or through mapping;
@@ -112,11 +112,11 @@ The other 12 parameters may also be used, but the effectiveness of these additio
 	* Some DocumentEntries will have a service stop time but not a service start time. This is not common, but will happen where there is no clear start time to an observation, therefore you should include a query parameter that would eliminate DocumentEntries that have a declared stop time well before the time range you are interested in:
 		* serviceStopTimeFrom parameter in the query should be set to a few minutes after the time you are interested in being the **Start** of the service time range
 	* Some DocumentEntries will have neither service start or stop. These will be returned regardless of any timeframe query parameters. Your Community Metadata Specification should encourage all metadata publications populate the serviceStartTime and serviceStopTime element as much as possible to avoid false-positive query results.
-### 2.1.1 Classification – value sets are critical
+### 2.1.1 Classification – Value Sets Are Critical
 The above optimal query shows that two of the critical FindDocuments query parameters (classCode and practiceSettingCode) should come from well controlled value sets, each having a limited number of code values that represent broad classifications.
 These codes need to be useful and recognizable for the end users. They expect to find documents under a certain ‘heading’ or category. The more values a value set has, the harder it is to store and retrieve the document under the right category.
 So, how does a Community determine what these value sets should contain? That is the main topic of this document.
-### 2.1.2 Power of other query parameters
+### 2.1.2 Power of Other Query Parameters
 The critical few query parameters support the most common queries and have the necessary robustness to perform a primary query filtering among all documents available for that patient. They return a list of matching document entries, with little or no risks of missing potentially relevant documents. Additional parameters could be considered, but have some inherent weaknesses:
 * **typeCode** is a value selected by the publisher of a document, expressing its intention for the document see [Table 4.1-1: Codable Metadata Attributes](#table-41-1-codable-metadata-attributes). The value set within a Community for typeCode will have to be comprehensive and is likely to contain overlapping codes. There can be preferred use codes within a Community and guidance to reduce overlap. But, in the end, it will be the publisher of a document that chooses the best code from their perspective. The reality of clinical practice is that the publisher must be allowed to pick the typeCode that best expresses their intentions for the document. Any overlap between code values (e.g., neuropediatric report code versus pediatric report code), would result in missing some report if the later code is used.
 * **availabilityStatus** opens access to documents that have been replaced with newer versions to address special cases (e.g., investigate potential clinical errors).
@@ -125,17 +125,17 @@ The critical few query parameters support the most common queries and have the n
 * **healthCareFacilityType** code may be useful in specific situations where a patient remembers the type of facility he was recently treated at, but not the specific name or address. In these rare  cases this parameter may be useful to perform a primary query.
 * **eventCodeList** provides the ability to extend the metadata parameters to support queries of documents that contain specialized data (e.g., imaging procedure code for imaging reports or imaging studies). It would indeed be useful to complement the critical few parameters in a primary query with an event code. It is important that an event code be defined for specific values of classCode, PracticeSettingType, or combination of these parameters (e.g., an imaging procedure code is used for document that have the    practiceSetting value “Radiology” combined with a classCode value “Report” or “Images”).
 * **creationTime** provides the ability to define a range of times between which the documents of interest have been created. The creationTime may be very different than the serviceTime (e.g., a discharge summary was created a week after the patient was actually discharged because some reports have not been approved or laboratory diagnosis test completed). Such a parameter may be useful to perform incremental queries (new document entries created since the last query was performed).
-## 2.2 Local refinement of Query results
+## 2.2 Local Refinement of Query Results
 The above critical few query parameters are necessary, but not always sufficient. The above query will result in false-positive results, that can be eliminated by local processing of the resulting metadata.
 A Document Consumer must be ready to do some form of local processing. This local processing would leverage all of the metadata. It might further eliminate unnecessary entries, group and sort the results, put emphasis on some entries, show relationships between documents et cetera. This local processing might be an automated algorithm and/or the possibility to interactively change the order, look for search words, by the end users.
 Local processing is necessary for time range, as any DocumentEntry that has not specified a value for service time will be returned.
 Even after local processing of the metadata from the results of the query to further eliminate the false-positives, one might still have more than one potential document of interest. In this case the document content will need to be retrieved and further processed.
-## 2.3 Lessons learned by this query strategy
+## 2.3 Lessons Learned by This Query Strategy
 The above optimal query strategy paired with local processing of the query results to further refine is designed to get best results, that have no false-negatives and minimize the false-positives that would frustrate user.
 There has been experimentation of adding extra metadata to provide more refined query results. However, these approaches will expose more sensitive information in the Metadata. Therefore, this handbook discourages the use of extra metadata.
 There has been experimentation with using other query parameters, as discussed in [Section 2.1.2](#212-power-of-other-query-parameters), these cases exist but are very specific.
 Experience with Document Sharing has also made clearer that document entries over time will continue to be described as they were recorded at the time of publication. These historic documents are still relevant for specific use-cases. The use-cases where historic documents are desired must be very robust to the historic document entries.
-# 3 Process to define your document metadata constraints
+# 3 Process to Define Your Document Metadata Constraints
 In this section, the process steps of the definition of your XDS metadata set are described and tips are provided. Manage this process as a project, including all stakeholders from the beginning. The following steps will be explained:
 1.  Identify shared business needs;
 2.  Gather relevant use cases;
@@ -147,7 +147,7 @@ In this section, the process steps of the definition of your XDS metadata set ar
 8.  Record all decisions and actions into your Community Metadata Specification;
 9.  Promulgate and deploy your Community Metadata Specification; and 
 10. Plan to revise your Community Metadata Specification in the future    
-## 3.1 Identify shared business needs
+## 3.1 Identify Shared Business Needs
 Collaborating parties and stakeholders in a Community must agree on the
 need for a shared definition and implementation of a metadata set. Here
 are the steps to organize this:
@@ -156,7 +156,7 @@ are the steps to organize this:
 * Achieve agreements: organization, legal, financial, governance:<br>Signed agreements are conducive to a well-organized, cooperative and consistent Community.
 * Set groundwork for deployment and maintenance:<br>Plan the implementation the metadata, including the vendors of Document Sources, vendors (XDS, EHR, HIT, and integration brokers),end users (teaching), healthcare organizations and other parties.
 * Engage with regulators, and professional societies:<br>Engaging early with regulators and professional societies will identify requirements that must be met, and best practices that others have available for use.
-## 3.2 Gather relevant Use cases
+## 3.2 Gather Relevant Use Cases
 Make an inventory of the current and planned use cases in the Community and look at use cases in other Communities. Look at what types of documents are used in these use cases, such as:
 * Medical
 	* Referral letters
@@ -198,10 +198,10 @@ Make an inventory of the current and planned use cases in the Community and look
 
 From these use cases, end user- and technical requirements can be set up for the metadata set. Consult with all stakeholders to get a clear view of the expectations of the end users towards the categories choices.
 As you consider the current and planned use cases in your Community, assume that additional use cases, not necessarily identified yet, will emerge and will have to be supported. For this, it is wise to plan that additional types of documents to be shared, documents that will likely be added in the future. Defining from the start the metadata capabilities to represent those future use cases is a wise forward planning (see the challenges in [Section 4](#4-metadata-principles-and-guidelines) to evolve a Community Metadata Specification). We recommend, based on the IHE Community experience, to include among the above document types, some of the document types that are most often deployed across the world: referral letters, medication information, laboratory results, diagnosis test reports, referral, care plans, diagnosis study requests, imaging studies, and consents.
-## 3.3 Gather existing patterns of how metadata are used 
+## 3.3 Gather Existing Patterns of How Metadata Are Used 
 Within an existing Community there will be patterns of use. These historic patterns should be documented as they would be considered as part of the creation of your new Community Metadata Specification. These may have grown organically or follow some existing governance.
 For each type of document currently published, identify the various metadata codes that are used. Capture the current way that XDS queries are done. Note that historic and current use of metadata might have deviated from your current Community Metadata Specification. This is an indication that there is an unmet need, or a misunderstanding of your existing Community Metadata Specification. These deviations should be investigated carefully to guide the updated Community Metadata Specification.
-## 3.4 Various uses for metadata
+## 3.4 Various Uses for Metadata
 In this section we will guide you on some best practices, to help guide you at making your new decisions on how metadata will be used in your Community. Consider the various uses for metadata in the relevant use cases:
 * Define the use of the metadata for the most relevant “critical few” used in queries – as discussed previously in [XDS/XCA Optimal Query](#21-xdsxca-optimal-query);
 * Define the use of the metadata for the additional metadata that are used in local filtering – as discussed in [Local refinement of Query results](#22-local-refinement-of-query-results);
@@ -232,7 +232,7 @@ The main purposes for metadata are:
 
 Filtering, grouping and sorting the available documents greatly enhance the discoverability of specific documents. Setting up a recognizable and intuitive set of metadata attributes helps the end users in quickly accessing the right information at the right time for the right purpose.
 
-## 3.5 Determine the needs for constraints
+## 3.5 Determine the Needs for Constraints
 
 Each Community will determine the desired level of constraints. Some Communities may only define a specific value set for classCode and leave all other metadata with the default constraints from XCA or XDS; other Communities will need to define constraints for every metadata attribute across all object types.
 
@@ -241,7 +241,7 @@ Each Community will determine the desired level of constraints. Some Communities
 * The technology used within the Community may have technical constraints. For example, a publishing system that has fixed codes that can’t be changed. These technical constraints are unfortunate but are a reality. It is better to understand them, and work around them.
 * IHE has predefined the use of metadata attributes and value sets for some document types:
 
-#### Table 3.5-1: Sample of IHE Document Content Profiles – with metadata constraints
+#### Table 3.5-1: Sample of IHE Document Content Profiles – With Metadata Constraints
 
 | IHE Domain | Profile Acronym | IHE Profile Links                                                                                                                      |
 | ---------- | --------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
@@ -266,7 +266,7 @@ Notes:
 1. XDW workflow definitions can be found [here](https://wiki.ihe.net/index.php/Category:XDW)
 2. Certain images can be found [here](https://wiki.ihe.net/index.php/Category:DICOM)
 3. All IHE profiles of CDA can be found [here](https://wiki.ihe.net/index.php/Category:CDA)
-## 3.6 Assemble the metadata attributes
+## 3.6 Assemble the Metadata Attributes
 In setting up your Community Metadata Specification, it is advised to
 start with the ‘easy’, non-ambiguous metadata attributes. These
 attributes often can just be assembled from what you are currently
@@ -278,7 +278,7 @@ using:
 	* authorSpecialty, authorRole, practiceSettingCode
 * Define expected use and the minimal accuracy for each of the date-time attributes
 	* creationTime, service timeframe
-## 3.7 Use the guidance in the Handbook to assemble the metadata set 
+## 3.7 Use the Guidance in the Handbook to Assemble the Metadata Set 
 [Section 4](#4-metadata-principles-and-guidelines) of this document provides principles, guidelines and other considerations for the refinement of a few critical metadata. In the definition process, keep the following action points in mind:
 * Define a recommended value set, and/or a required value set for coded attributes
 	* It is better to start with small value sets for any coded attribute. It is far easier to expand a value set than it is to correct historic data that was liberally published;
@@ -325,7 +325,7 @@ For deploying value sets, we offer the following specific suggestions:
 * Define transition dates and governance for when newly created documents will be expected to use the new Community Metadata Specification (e.g., value sets).
 * Decide whether you will manage transitions per-participant or across the community. It is easier for participants clients to deal with all participants transitioning to a new metadata usage on the same    date, but this is often not possible. Be prepared to manage separate dates per participant.
 * Decide on the length of the transition period, in which either the new or the old metadata values may be used. Transition periods can make it easier to manage transitions at the Community level. The length of transition period depends on the ambition, coordination, resources, number of participants etc.
-### 3.9.1 Historic shared documents and their metadata. 
+### 3.9.1 Historic Shared Documents and Their Metadata 
 There are some strategies to choose from:
 * Modify metadata for the existing documents. This is discouraged as the process of changing all historic entries is very expensive as the longitudinal data grows. If you do update the metadata on historic entries, track the dates these are modified for each participant. You may then be able to deprecate values or value sets entirely, removing them from the Community Metadata Specification. Only do this if these values are truly not in use and will not show up in queries.
 * Develop “smart” implementations that can map between new and old values. Note that this is not part of the XDS specification but is a rather a potential value added by the implementer. This automatic    mapping may be done at either the client or server side. For example,
@@ -345,7 +345,7 @@ Once the Community Metadata Specification is deployed there are some considerati
 	* the participant is tardy with implementing your Community Metadata Specification.
 * Ensure that the current version of the Community Metadata Specification reflects the current state of metadata usage and any transitions. As explained earlier, historic value sets and configurations should be maintained to aid with transition.
 * Setup a timeframe to consider a maintenance activity on your Community Metadata Specification. This is usually not longer than 5 years. At that time, you will start this process over.
-# 4 Metadata principles and guidelines
+# 4 Metadata Principles and Guidelines
 The goal of relevant metadata is to enable effective discovery of the ‘right’ set of documents. This goal is focused on the Document Consumer success, as enabled by well controlled Document Source filling out the metadata when the content is published or otherwise made available for discovery.
 Constraints on the use of Document Metadata are not limited to coded attributes. Also critical to good discovery is the use of date/time stamps, structured attributes, identifiers, and narrative attributes.
 This handbook will guide you on how to evaluate the critical few metadata attributes and their search and refinement. Further refinement beyond these critical few is encouraged but not the focus of this handbook.
@@ -387,7 +387,7 @@ Here are some general principles for good metadata:
 * Definitions of codes in the metadata system must not conflict with the definition given for that code by the standard that defines that code;
 * A value set may contain codes from different code systems.
 * When a Community publishes a value set, it should indicate the conformance expectation (example, preferred, extensible, required)
-## 4.2 Principles per metadata attribute
+## 4.2 Principles Per Metadata Attribute
 
 ### 4.2.1 classCode
 Critical for searching for a document of interest; The classCode should be optimized for discovery. The value set for classCode should be small and representing non-overlapping controlled value set of pre-negotiated codes. This will ensure that any document consumer query expression results in getting deterministic query results, across multiple document sources.
