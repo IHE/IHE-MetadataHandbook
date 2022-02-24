@@ -5,7 +5,7 @@
 
 **Document Sharing Metadata**
 
-**Revision 2.1 - Published - conversion to html**
+**Revision 2.1 - Published (Conversion to HTML)**
 
 Date: March 1, 2022
 
@@ -53,7 +53,7 @@ This handbook is designed to guide you to an understanding of your intended use 
 The intended audience of this handbook is:
 * Those involved in deployment of an XDS Affinity Domain, or XCA Community;
 * Those involved in joining multiple Communities using XCA;
-* Clinicians involved in the use of documents from the Communities;and
+* Clinicians involved in the use of documents from the Communities; and
 * Developers involved in implementing actors supporting the Community.
 
 The intended audience is expected to be well versed in the Document
@@ -99,7 +99,7 @@ The other  queries are not useless but are for more special purposes. Some are m
 The FindDocuments query has 17 query parameters, but 7 of them play a critical role. These parameters are the “critical few”, especially for the initial query that performs the *primary filtering* (further discussed in [Various uses for metadata](#34-various-uses-for-metadata) among all available documents for a patient that may be in the thousands with a mature deployment. This primary filtering optimizes the use of query to return the best possible results, avoiding missing any results that should be considered. This favors false-positives (results that are not desired), over false-negatives (missed results). The query results returned include full metadata for each entry found; *local refinement* of these results (see [Section 2.2](#22-local-refinement-of-query-results)) is used to further eliminate these false-positives.
 The other 12 parameters may also be used, but the effectiveness of these additional parameters in primary filtering is limited. See [Section 2.1.2](#212-power-of-other-query-parameters) for further explanation. Here are the 7 query parameters and metadata attributes that are combined for primary filtering:
 * **patientId** - this is required in XDS/XCA. You must have a Patient ID you are interested in. Use of PIX, PDQ, XCPD, or some other Patient Identity Management system is a prerequisite, that will not be further discussed in this handbook.
-* **classCode** – classCode is used to group documents into logical classes which are useful to primary filtering success. A small number of controlled value set of pre-negotiated code values should be defined to group documents into broad logical 'classifications',designed so that for any use case where someone is looking for documents they can pick one term from this value set.
+* **classCode** – classCode is used to group documents into logical classes which are useful to primary filtering success. A small number of controlled value set of pre-negotiated code values should be defined to group documents into broad logical 'classifications', designed so that for any use case where someone is looking for documents they can pick one term from this value set.
 * **practiceSettingCode** - this is the clinical specialty where the act that resulted in the document was performed. Like the classCode, this should have been filled with a controlled value set of pre-negotiated code values that represents broad classifications of clinical specialties. By restricting the value set to the high-level clinical specialties, one should avoid the misfiling associated with documents produced by sub-specialties.
 * **serviceStartTime** - **serviceStopTime** – When there is a time range of the service event that you are interested, you will query against the serviceStartTime and service StopTime metadata element to find documents that indicate they fit your time range. The service times are specific to the time range of the treatment or episode. This is different than the document creation time, which is when the document was created. The query results will return any document whose “service time” falls within that range. It is important to note that these parameters work together to give a period of time.
 <br>Given you are interested in a specific time range (**Start** -\>
@@ -132,9 +132,9 @@ Local processing is necessary for time range, as any DocumentEntry that has not 
 Even after local processing of the metadata from the results of the query to further eliminate the false-positives, one might still have more than one potential document of interest. In this case the document content will need to be retrieved and further processed.
 ## 2.3 Lessons learned by this query strategy
 The above optimal query strategy paired with local processing of the query results to further refine is designed to get best results, that have no false-negatives and minimize the false-positives that would frustrate user.
-There has been experimentation of adding extra metadata to provide morerefined query results. However, these approaches will expose more sensitive information in the Metadata. Therefore, this handbook discourages the use of extra metadata.
+There has been experimentation of adding extra metadata to provide more refined query results. However, these approaches will expose more sensitive information in the Metadata. Therefore, this handbook discourages the use of extra metadata.
 There has been experimentation with using other query parameters, as discussed in [Section 2.1.2](#212-power-of-other-query-parameters), these cases exist but are very specific.
-Experience with Document Sharing has also made clearer that documententries over time will continue to be described as they were recorded at the time of publication. These historic documents are still relevant for specific use-cases. The use-cases where historic documents are desired must be very robust to the historic document entries.
+Experience with Document Sharing has also made clearer that document entries over time will continue to be described as they were recorded at the time of publication. These historic documents are still relevant for specific use-cases. The use-cases where historic documents are desired must be very robust to the historic document entries.
 # 3 Process to define your document metadata constraints
 In this section, the process steps of the definition of your XDS metadata set are described and tips are provided. Manage this process as a project, including all stakeholders from the beginning. The following steps will be explained:
 1.  Identify shared business needs;
@@ -165,7 +165,8 @@ Make an inventory of the current and planned use cases in the Community and look
 	* History & physical reports
 	* Consultation documentation
 	* Laboratory results
-	* Genomics, biomics, proteomics information
+	* Genomics, biomics, 
+	information
 	* Diagnostic test reports
 	* Multidisciplinary board reports
 	* Discharge letters
@@ -215,7 +216,7 @@ The IHE ITI Technical Framework Volume 3 contains details on each metadata attri
 
 ![](./media/image4.png)
 
-The XDS metadata attributes cover a number of domains that focus on a number of axes: patient identity, privacy and security, provenance(authors, senders, location, date and time), processes, purpose (descriptive), document lifecycle information and technical information about the document itself. The why, where, what, when, how and other metadata aspects document the context within which the document was created. This information is vital for the correct interpretation of the information contained in the document. All these metadata attributes can be used, often in combination, for the filtering and selecting of specific information types.
+The XDS metadata attributes cover a number of domains that focus on a number of axes: patient identity, privacy and security, provenance (authors, senders, location, date and time), processes, purpose (descriptive), document lifecycle information and technical information about the document itself. The why, where, what, when, how and other metadata aspects document the context within which the document was created. This information is vital for the correct interpretation of the information contained in the document. All these metadata attributes can be used, often in combination, for the filtering and selecting of specific information types.
 The main purposes for metadata are:
 * Documenting
 	* All metadata attributes define the contextual information about the document (why, what, when, who, …). They are vital for the correct interpretation of the information contained in the document;
@@ -389,7 +390,7 @@ Here are some general principles for good metadata:
 ## 4.2 Principles per metadata attribute
 
 ### 4.2.1 classCode
-Critical for searching for a document of interest; The classCode should be optimized for discovery. The value set for classCode should be small and representing non-overlapping controlled value set of pre-negotiated codes. This will ensure that any document consumer query expression results in getting deterministic query results, across multiple documentsources.
+Critical for searching for a document of interest; The classCode should be optimized for discovery. The value set for classCode should be small and representing non-overlapping controlled value set of pre-negotiated codes. This will ensure that any document consumer query expression results in getting deterministic query results, across multiple document sources.
 * Coarse level granularity, non-overlapping, preferably from one perspective;
 * Value set managed at Community level should be closed, only values from the value set are used for publication;
 * Non-overlapping concepts to enable most effective searching success;
