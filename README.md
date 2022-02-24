@@ -28,9 +28,9 @@ The current version of the IHE IT Infrastructure Technical Framework can be foun
 
 **CONTENTS**
 * [Introduction](#1-introduction)
-* [Principles of good document metadata control](#2-principles-of-good-document-metadata-control)
-* [Process to define your document metadata constraints](#3-process-to-define-your-document-metadata-constraints)
-* [Metadata principles and guidelines](#4-metadata-principles-and-guidelines)
+* [Principles of Good Document Metadata Control](#2-principles-of-good-document-metadata-control)
+* [Process to Define Your Document Metadata Constraints](#3-process-to-define-your-document-metadata-constraints)
+* [Metadata Principles and Guidelines](#4-metadata-principles-and-guidelines)
 * [Glossary](#glossary)
 # 1 Introduction
 The Document Sharing profiles from IHE including [XDS](https://profiles.ihe.net/ITI/TF/Volume1/ch-10.html) and [XCA](https://profiles.ihe.net/ITI/TF/Volume1/ch-18.html), enable a Community to share Patient specific medical documents. This is described in the [Enabling Document Sharing through IHE Profiles White Paper (HIE using IHE)](https://profiles.ihe.net/ITI/HIE-Whitepaper/index.html). Each document shared is described by metadata. A Community deploying an HIE (Health Information Exchange) this way needs to define some metadata constraints and practices, so that the documents are found when they are needed. This handbook helps a Community to come up with appropriate constraints.
